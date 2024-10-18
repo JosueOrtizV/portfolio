@@ -38,7 +38,7 @@ export class AppComponent implements OnInit{
   }
 
   updateDownloadLink(lang: string): void {
-    const downloadLink = lang === 'es' ? '/assets/cv/Josue-Ortiz-CV.pdf' : '/assets/cv/Josue-Ortiz-CV-EN.pdf';
+    const downloadLink = lang === 'es' ? './assets/cv/Josue-Ortiz-CV.pdf' : './assets/cv/Josue-Ortiz-CV-EN.pdf';
     this.downloadButton.nativeElement.href = downloadLink;
     this.downloadButton.nativeElement.download = lang === 'es' ? 'Josue-Ortiz-CV.pdf' : 'Josue-Ortiz-CV-EN.pdf';
   }
