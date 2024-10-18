@@ -1,0 +1,47 @@
+<div class="filter-buttons">
+    <button
+    *ngFor="let language of languages"
+    (click)="filterProjects(language)"
+    [class.selected]="selectedLanguage === language">
+    {{ language === 'All' ? showAllLabel : language }}
+</button>
+</div>
+
+<div class="projects-container">
+    <div *ngFor="let project of paginatedProjects" class="project-card" (click)="openModal(project)">
+        <div id="project-card-img">
+            <img [src]="project.images[0]" alt="{{ project.name[currentLang] }}">
+        </div>
+        <h3>{{ project.name[currentLang] }}</h3>
+        <div class="project-languages">
+            <span *ngFor="let lang of project.languages">{{ lang }}</span>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="filteredProjects.length > projectsPerPage" class="pagination-buttons" display="none">
+    <button (click)="previousPage()" [disabled]="currentPage === 1">Previous</button>
+    <button (click)="nextPage()" [disabled]="currentPage * projectsPerPage >= filteredProjects.length">Next</button>
+</div>
+
+<div *ngIf="selectedProject" class="modal" (click)="closeModalOnClick($event)">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+        <span class="close" (click)="closeModal()">&times;</span>
+        <swiper-container class="mySwiper" init="false">
+            <swiper-slide *ngFor="let image of selectedProject?.images">
+                <img [src]="image" alt="{{ selectedProject.name[currentLang] }}">
+            </swiper-slide>
+        </swiper-container>
+        <div class="modal-info">
+            <h3>{{ selectedProject.name[currentLang] }}</h3>
+            <p [innerHTML]="selectedProject.description[currentLang]"></p>
+            <div class="project-languages">
+                <span *ngFor="let lang of selectedProject.languages">{{ lang }}</span>
+            </div>
+            <div class="modal-info-btn">
+                <a id="btn-code" [href]="selectedProject.codeLink" target="_blank" class="btn">{{ 'PROJECTS.VIEW_CODE' | translate }}</a>
+                <a id="btn-demo" [href]="selectedProject.demoLink" target="_blank" class="btn">Demo</a>
+            </div>
+        </div>
+    </div>
+</div>

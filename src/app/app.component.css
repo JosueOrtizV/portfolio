@@ -1,0 +1,329 @@
+/* Header General */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    width: 96%;
+    margin: 20px auto; 
+    text-transform: uppercase;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #87CEEB, #ffffff); 
+    border-radius: 15px;
+    padding: 10px; 
+    position: relative;
+    box-shadow: 0px 0px 40px rgb(163, 252, 255);
+    border-left: 1px solid #b7b7b7;
+    border-right: 1px solid #b7b7b7;
+    flex-shrink: 0;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+
+/* Navegación */
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%; 
+    height: inherit;
+    margin: 0 auto; 
+    padding: 0;
+    list-style: none; 
+}
+
+header nav ul li {
+    margin: 0 25px; 
+    text-align: center;
+    line-height: 200%;
+}
+
+header nav ul li a {
+    display: flex;
+    align-items: center; 
+    text-decoration: none;
+    color: rgb(56, 122, 143);
+    transition: all 300ms;
+    height: 100%;
+    font-size: 1.5em;
+    padding: 10px 13px;
+}
+
+header a:hover,
+.actived {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+
+/* Logo */
+
+header nav ul li#logo a {
+    font-family: "finger";
+    font-size: 40px;
+    transition: color 500ms, transform 500ms;
+}
+
+header nav ul li#logo a:hover {
+    background: transparent;
+    color: black;
+    transform: scale(1.50, 1.50);
+}
+
+/* Selector de Lenguajes */
+.language-selector {
+    display: flex;
+    font-size: 20px; 
+    position: absolute;
+    margin-left: 20px;
+    justify-content: space-between;
+}
+
+.language-selector #es, .language-selector #en {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.language-selector img, #download-cv img{
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.language-selector .selected {
+    border-bottom: 2px solid #000; 
+    color: #000; 
+}
+
+
+/* Descargar CV */
+
+#download-cv {
+    display: flex;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%); 
+    padding: 10px 15px;
+    background: linear-gradient(180deg, rgba(94,197,236,1) 0%, rgba(149,219,244,1) 92%);
+    color: white;
+    align-items: center;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background 0.6s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(94,197,236,0.5), 0 6px 20px rgba(149,219,244,0.4);
+}
+
+#download-cv::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    filter:blur(10px);
+    animation: border-animation 3s linear infinite;
+}
+
+#download-cv::after {
+    content: "";
+    position: absolute;
+    left: 2%;
+    top: 1%;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+@keyframes border-animation {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 0;
+        left: 100%;
+    }
+    50% {
+        top: 100%;
+        left: 100%;
+    }
+    75% {
+        top: 100%;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+#download-cv:hover {
+    background: #005983;
+    box-shadow: 0 4px 8px rgba(0, 89, 131, 0.5), 0 6px 20px rgba(0, 89, 131, 0.4);
+}
+
+
+/* Contenedor principal */
+#content {
+    flex: 1;
+    width: 90%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 40px rgb(163, 252, 255);
+    border-left: 1px solid #b7b7b7;
+    border-right: 1px solid #b7b7b7;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.7);
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+/* Pie de pagina */
+footer {
+    width: 75%;
+    margin: 0 auto;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+    flex-shrink: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    header {
+        padding: 8px;
+        margin: 15px auto;
+    }
+    header nav ul li a {
+        font-size: 1.4em;
+        padding: 8px 10px;
+    }
+    #content {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+}
+
+@media (max-width: 992px) {
+    header {
+        padding: 6px;
+        margin: 10px auto;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .language-selector, #download-cv {
+        position: relative;
+        right: 0;
+        top: 0;
+        transform: translateY(0%);
+    }
+    header nav{
+        width: 90%;
+    }
+    header nav ul{
+        width: 100%;
+        justify-content: space-between;
+    }
+    header nav ul li a {
+        font-size: 1.3em;
+        padding: 6px 8px;
+    }
+    #download-cv {
+        padding: 5px 5px;
+        font-size: 1em;
+    }
+    #content {
+        width: 100%;
+        margin: 10px auto;
+    }
+    #download-cv:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 5px;
+        margin: 5px auto;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    header nav ul li#logo a {
+        font-size: 30px;
+    }
+    .language-selector {
+        margin-left: 0;
+        margin-bottom: 2px;
+        font-size: 18px;
+        position: relative;
+    }
+    header nav ul {
+        align-items: center;
+    }
+    header nav ul li a {
+        font-size: 1.2em;
+        padding: 5px 6px;
+    }
+    #download-cv {
+        padding: 5px 5px;
+        font-size: 0.9em;
+    }
+    #content {
+        width: 100%;
+        margin: 5px auto;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: 4px;
+        margin: 5px auto;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    header nav ul li#logo a {
+        font-size: 15px;
+    }
+    .language-selector {
+        margin-left: 0;
+        margin-bottom: 2px;
+        font-size: 17px;
+        position: relative;
+    }
+    header nav ul {
+        align-items: center;
+    }
+    header nav ul li {
+        margin: 5px 0;
+    }
+    header nav ul li a {
+        font-size: 1.4em;
+        padding: 4px 5px;
+    }
+    #content {
+        width: 100%;
+        margin: 5px auto;
+    }
+}

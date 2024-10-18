@@ -1,0 +1,348 @@
+/* Estilos generales */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #1E90FF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-buttons button.selected {
+    background-color: #005983;
+}
+
+.filter-buttons button:hover {
+    background-color: #0077B5;
+    transform: translateY(-2px);
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    padding: 15px;
+    height: 260px;
+    border-radius: 10px;
+    background-color: #f0f8ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s color 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #1E90FF;
+}
+
+#project-card-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+}
+
+.project-card img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s; 
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+.project-card:hover img {
+    transform: perspective(1000px) rotateY(15deg) rotateX(15deg); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    margin-top: 0.3em;
+    font-size: 1.2em;
+}
+
+.modal {
+    display: none; 
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+
+.modal.show {
+    display: flex;
+    opacity: 1; 
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%; /* Ajusta el ancho para pantallas pequeñas */
+    height: auto; 
+    max-width: 800px; 
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    transform: scale(0.5); 
+    transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+    opacity: 0;
+}
+
+.modal-content.show {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.swiper {
+    max-height: 400px;
+}
+
+swiper-container {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    max-height: 400px; 
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+
+swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    border-radius: 10px;
+}
+
+.modal-info {
+    width: 100%;
+}
+
+.modal-info h3 {
+    color: #1E90FF;
+    font-size: 1.4em;
+}
+
+.modal-info p {
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+.modal-info h3, .modal-info p {
+    margin-bottom: 5px;
+}
+
+.modal-info-btn {
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+#btn-code {
+    width: 15%;
+}
+
+#btn-demo {
+    width: 20%;
+}
+
+#btn-demo {
+    margin-left: 4em;
+    background: rgb(27, 27, 27);
+}
+
+#btn-demo:hover {
+    background-color: #005983;
+}
+
+.project-languages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.project-languages span {
+    background-color: #5c95ff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.project-languages span:hover {
+    transform: scale(1.1);
+}
+
+.modal-content .close {
+    position: absolute;
+    top: -15px;
+    right: 10px;
+    font-size: 3.5rem;
+    cursor: pointer;
+    color: #005983;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #1E90FF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #005983;
+}
+
+.pagination-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-buttons button {
+    margin: 0 10px;
+    padding: 10px 15px;
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination-buttons button:disabled {
+    background-color: #c0c0c0;
+    cursor: not-allowed;
+}
+
+.pagination-buttons button:hover:not(:disabled) {
+    background-color: #005983;
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .project-card {
+        width: 28%; /* Ajuste para pantallas grandes */
+    }
+
+    swiper-container {
+        height: auto;
+    }
+    
+    #btn-code, #btn-demo {
+        width: 15%; /* Ajusta el tamaño del botón para pantallas grandes */
+    }
+    .modal-info h3, .project-card h3 {
+        font-size: 1.4em;
+    }
+    .modal-info p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 992px) {
+    .project-card {
+        width: 40%; /* Ajuste para pantallas medianas */
+    }
+    
+    #btn-code, #btn-demo {
+        width: 20%; /* Ajusta el tamaño del botón para pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        width: 48%; /* Ajuste para tablets */
+    }
+    
+    #btn-code, #btn-demo {
+        width: 27%; /* Ajusta el tamaño del botón para tablets */
+    }
+    .modal-info h3, .project-card h3 {
+        font-size: 1.6em;
+    }
+    .modal-info p {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 576px) {
+    .project-card {
+        width: 85%; /* Ajuste para pantallas pequeñas */
+    }
+    
+    #btn-code, #btn-demo {
+        width: 25%; /* Ajusta el tamaño del botón para pantallas pequeñas */
+    }
+    .modal-info h3, .project-card h3 {
+        font-size: 1.7em;
+    }
+    .modal-info p {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        width: 95%; /* Ajuste para pantallas más pequeñas */
+    }
+    
+    #btn-code, #btn-demo {
+        width: auto; /* Ajusta el tamaño del botón para pantallas más pequeñas */
+    }
+}

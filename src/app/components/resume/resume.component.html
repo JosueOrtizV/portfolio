@@ -1,0 +1,69 @@
+<section id="resume">
+    <div class="expEdu">
+        <!-- Experiencia -->
+        <div class="experience">
+            <h2>{{ 'RESUME.EXPERIENCE.EXP' | translate }}</h2>
+            <div class="job">
+                <div class="info">
+                    <h3>{{ 'RESUME.EXPERIENCE.CFE' | translate }}</h3>
+                    <p>{{ 'RESUME.EXPERIENCE.CFE-DESC' | translate }}</p>
+                    <em> feb. 2023 - ago. 2023</em>
+                </div>
+                <div class="img">
+                    <a href="https://www.cfe.mx/Pages/default.aspx" target="_blank"><img src="/assets/img/cfe.png" alt="CFE"></a>
+                </div>
+
+            </div>
+            <div class="job" id="cfe2">
+                <div class="info">
+                    <h3>{{ 'RESUME.EXPERIENCE.CFE' | translate }}</h3>
+                    <p>{{ 'RESUME.EXPERIENCE.CFE-DESC' | translate }}</p>
+                    <em> mar. 2022 - sept. 2022</em>
+                </div>
+                <div class="img">
+                    <a href="https://www.cfe.mx/Pages/default.aspx" target="_blank"><img src="/assets/img/cfe.png" alt="CFE"></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Educación -->
+        <div class="education">
+            <h2>{{ 'RESUME.EDUCATION.EDU' | translate }}</h2>
+            <div class="school">
+                <div class="info">
+                    <h3>{{ 'RESUME.EDUCATION.SCHOOL' | translate }}</h3>
+                    <p>{{ 'RESUME.EDUCATION.CAREER' | translate }}</p>
+                    <em> ago. 2019 - feb. 2024</em>
+                </div>
+                <div class="img">
+                    <a href="https://euro.ueh.edu.mx/" target="_blank"><img src="/assets/img/euro.png" alt="{{ 'RESUME.EDUCATION.SCHOOL' | translate }}"></a>
+                </div>
+            </div>
+            <div class="school" id="eng">
+                <div class="info">
+                    <h3>Golden English Xalapa</h3>
+                    <p>{{ 'RESUME.EDUCATION.ENG' | translate }}</p>
+                    <em> feb. 2024 - </em>
+                </div>
+                <div class="img">
+                    <a href="https://www.facebook.com/goldenenglishxalapa/" target="_blank"><img src="/assets/img/golden.png" alt="Golden English Xalapa"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Certificados -->
+    <div class="certificates">
+        <h2>{{ 'RESUME.CERTIFICATIONS.CERT' | translate }}</h2>
+        <swiper-container class="mySwiper" init="false">
+                <swiper-slide *ngFor="let cert of certificates">
+                    <div class="swiper-content">
+                        <a [href]="cert.link" target="_blank">
+                            <img [src]="cert.image" [alt]="cert.title">
+                        </a>
+                    </div>
+                </swiper-slide>
+        </swiper-container>
+        <a [href]="certificatesLink" target="_blank" class="btn">{{ 'RESUME.CERTIFICATIONS.MORE' | translate }}</a>
+    </div>
+</section>

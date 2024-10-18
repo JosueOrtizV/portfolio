@@ -1,0 +1,56 @@
+{   
+    "GENERAL":{
+        "ABOUT": "Inicio",
+        "PROJECTS": "Proyectos",
+        "RESUME": "Curriculum",
+        "CONTACT": "Contacto"
+    },
+    "HOME": {
+        "TITLE": "Josué Ortiz",
+        "PROFESSION": "Desarrollador Web e Ingeniero Mecatronico",
+        "ABOUT-TITLE": "Sobre mi",
+        "INFO1": "Soy un apasionado de la tecnología con formación en Ingeniería Mecatrónica. A lo largo de mi carrera, descubrí mi interés por la programación, lo que me ha llevado a enfocarme en el aprendizaje integral de tecnologías de desarrollo web tanto en el Front End como en el Back End.",
+        "INFO2": "Soy una persona disciplinada y meticulosa, con una gran capacidad para trabajar en equipo y adaptarme a distintos entornos. Siempre busco hacer las cosas bien y estoy comprometido con el aprendizaje continuo de nuevas tecnologías. Además, poseo un buen nivel de inglés conversacional, lo que me permite desenvolverme eficazmente en diversos contextos.",
+        "SKILLS": "Tecnologias",
+        "LANGS": "Lenguajes de programación",
+        "FRAMEWORKS": "Frameworks & librerías",
+        "DB": "Bases de datos"
+    },
+    "PROJECTS": {
+        "TITLE": "MIS PROYECTOS",
+        "ALL": "Todos",
+        "VIEW_CODE": "Ver Código"
+    },
+    "RESUME":{
+        "EXPERIENCE":{
+            "EXP": "Experiencia",
+            "CFE": "Comisión Federal de Electricidad (CFE)",
+            "CFE-DESC": "Subgerencia de planeacion, proyectos y construccion."
+        },
+        "EDUCATION": {
+            "EDU": "Educacion",
+            "SCHOOL": "Universidad Euro Hispanoamericana",
+            "CAREER": "Ingenieria Mecatrónica",
+            "ENG": "Idioma Ingles"
+        },
+        "CERTIFICATIONS": {
+            "CERT": "Certificados",
+            "1": "Master en JavaScript: Aprender JS, jQuery, Angular, NodeJS - Udemy",
+            "2": "HTML5 y CSS3 parte 1, 2 y 3 - Alura Latam",
+            "3": "Logica de programacion - Alura Latam",
+            "4": "Programa Oracle Next Education F2 T5 Back-end - Alura Latam",
+            "5": "Formación Java Orientado a Objetos G5 - ONE - Alura Latam",
+            "6": "Git y GitHub: controle y comparta su código - Alura Latam",
+            "MORE": "Ver todos los certificados"
+        }
+    },
+    "CONTACT": {
+        "CONT": "Ponte en contacto!!",
+        "WHATS": "Mandame un Whatsapp!!",
+        "MAIL": "Mandame un Email!!",
+        "LINK": "Checa mi perfil!!",
+        "COPY": "Click para copiar"
+    },
+    "LANGUAGE": "Idioma: ",
+    "CV": "Descargar CV"
+}

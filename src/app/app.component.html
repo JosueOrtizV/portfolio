@@ -1,0 +1,39 @@
+<div class="app-container">
+  <header>
+    <div class="language-selector">
+      <strong>{{ 'LANGUAGE' | translate }}</strong>
+      <div id="es" (click)="switchLanguage('es')" [class.selected]="currentLanguage === 'es'">
+        <img src="../assets/img/mx.svg" alt="Español">
+        <p>ES</p>
+      </div>
+      <div id="en" (click)="switchLanguage('en')" [class.selected]="currentLanguage === 'en'">
+        <img src="../assets/img/us.svg" alt="English">
+        <p>EN</p>
+      </div>
+    </div>  
+    <nav>
+      <ul>
+        <li><a [routerLink]="['/home']" routerLinkActive="actived">{{ 'GENERAL.ABOUT' | translate }}</a></li>
+        <li><a [routerLink]="['/projects']" routerLinkActive="actived">{{ 'GENERAL.PROJECTS' | translate }}</a></li>
+        <li id="logo" class="logo"><a href="#">JO</a></li>
+        <li><a [routerLink]="['/resume']" routerLinkActive="actived">{{ 'GENERAL.RESUME' | translate }}</a></li>
+        <li><a [routerLink]="['/contact']" routerLinkActive="actived">{{ 'GENERAL.CONTACT' | translate }}</a></li>
+      </ul>
+    </nav>
+    <a #downloadButton id="download-cv" target="_blank" (click)="confirmDownload($event)">
+      <strong >{{ 'CV' | translate }}</strong>
+      <img src="../assets/img/download.png" alt="Download CV">
+    </a>
+    
+    
+  </header>
+
+
+  <section id="content">
+    <router-outlet></router-outlet>
+  </section>
+
+  <footer>
+    &copy;Josué Ortiz
+  </footer>
+</div>
