@@ -1,0 +1,56 @@
+{
+    "GENERAL":{
+        "ABOUT": "About",
+        "PROJECTS": "Projects",
+        "RESUME": "Resume",
+        "CONTACT": "Contact"
+    },
+    "HOME": {
+        "TITLE": "Josué Ortiz",
+        "PROFESSION": "Web Developer & Mechatronic enginner",
+        "ABOUT-TITLE": "About Me",
+        "INFO1": "I am passionate about technology with a background in Mechatronics Engineering. Throughout my career, I discovered my interest in programming, which has led me to focus on comprehensive learning of both Front End and Back End web development technologies.",
+        "INFO2": "I am a disciplined and meticulous person, capable of working effectively in teams and adapting to various environments. I strive to do things right and am committed to continuous learning and improvement of new technologies. Additionally, I have a good level of conversational English, allowing me to navigate and perform effectively in diverse contexts.",
+        "SKILLS": "Technologies",
+        "LANGS": "Langs",
+        "FRAMEWORKS": "Frameworks & Libraries",
+        "DB": "Databases"
+    },
+    "PROJECTS": {
+        "TITLE": "MY PROJECTS",
+        "ALL": "All",
+        "VIEW_CODE": "View Code"
+    },
+"RESUME": {
+    "EXPERIENCE": {
+        "EXP": "Experience",
+        "CFE": "Federal Electricity Commission (CFE)",
+        "CFE-DESC": "Deputy Management of Planning, Projects, and Construction."
+    },
+    "EDUCATION": {
+        "EDU": "Education",
+        "SCHOOL": "Euro Hispanoamerican University",
+        "CAREER": "Mechatronics Engineering",
+        "ENG": "English Language"
+    },
+    "CERTIFICATIONS": {
+        "CERT": "Certifications",
+        "1": "Master in JavaScript: Learn JS, jQuery, Angular, NodeJS - Udemy",
+        "2": "HTML5 and CSS3 part 1, 2 and 3 - Alura Latam",
+        "3": "Programming Logic - Alura Latam",
+        "4": "Oracle Next Education F2 T5 Back-end Program - Alura Latam",
+        "5": "Java Object-Oriented Training G5 - ONE - Alura Latam",
+        "6": "Git and GitHub: Control and share your code - Alura Latam",
+        "MORE": "Check All Certificates"
+    }
+},
+"CONTACT": {
+    "CONT": "Get in Touch!!",
+    "WHATS": "Send me a mesagge!!",
+    "MAIL": "Send me an email!!",
+    "LINK": "Check my profile!!",
+    "COPY": "Click to copy"
+},
+    "LANGUAGE": "Language: ",
+    "CV": "Download CV"
+}
