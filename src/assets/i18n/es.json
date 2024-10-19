@@ -52,5 +52,7 @@
         "COPY": "Click para copiar"
     },
     "LANGUAGE": "Idioma: ",
-    "CV": "Descargar CV"
+    "CV": "Descargar CV",
+    "ERROR": "404 - Página no encontrada",
+    "ERROR-TEXT": "Lo sentimos, la página que estás buscando no existe."
 }

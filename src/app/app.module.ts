@@ -12,6 +12,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 
 import { ResumeComponent } from './components/resume/resume.component';
+import { ErrorComponent } from './components/error/error.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -25,6 +26,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ProjectsComponent,
     ContactComponent,
     ResumeComponent,
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,
