@@ -57,7 +57,7 @@ export class AppComponent implements OnInit{
     event.preventDefault();
     const lang = this.translate.currentLang;
     const downloadText = lang === 'es' ? 'Quieres descargar el archivo ' : 'Do you want to download the file ';
-    const downloadFile = lang === 'es' ? '"Josue-Ortiz-CV.pdf"' : '"Josue-Ortiz-CV-EN.pdf"';
+    const downloadFile = lang === 'es' ? '"Josue_Ortiz_CV_ES.pdf"' : '"Josue_Ortiz_CV_EN.pdf"';
     const confirmation = confirm(downloadText + downloadFile + ' ?');
     if (confirmation) {
       window.open(this.downloadButton.nativeElement.href, '_blank');
