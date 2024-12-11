@@ -24,12 +24,13 @@
 "RESUME": {
     "EXPERIENCE": {
         "EXP": "Experience",
-        "CFE": "Federal Electricity Commission (CFE)",
-        "CFE-DESC": "Deputy Management of Planning, Projects, and Construction."
+        "CFE": "Comisión Federal de Electricidad (CFE)",
+        "CFE-DESC": "I did my professional internship in the planning, projects, and construction sub-management.",
+        "CFE-DESC2": "I did my community service in the planning, projects, and construction sub-management."
     },
     "EDUCATION": {
         "EDU": "Education",
-        "SCHOOL": "Euro Hispanoamerican University",
+        "SCHOOL": "Universidad Euro Hispanoamericana",
         "CAREER": "Mechatronics Engineering",
         "ENG": "English Language"
     },
